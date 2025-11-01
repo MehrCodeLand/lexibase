@@ -22,7 +22,7 @@ if __name__ == "__main__":
     uvicorn.run(
         "main:app",
         host="0.0.0.0",   # accessible externally (e.g., from Docker)
-        port=8000,
+        port=8002,
         reload=True       # auto reload when you edit code
     )
 

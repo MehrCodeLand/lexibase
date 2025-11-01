@@ -27,7 +27,7 @@ def add_words(item: WordItem):
 
 
 
-@router.post("/search_wrod")
+@router.post("/search_word")
 def search_word(query : SearchQuery):
     try:
         query_vector = get_vector(text=query.word)
