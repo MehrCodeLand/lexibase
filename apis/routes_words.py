@@ -1,6 +1,6 @@
 from fastapi import APIRouter , Query
 from models.schemas import WordItem , SearchQuery
-from core.qdrant_client import insert_word , search_similar
+from core.qdrant_client import insert_word , search_similar , hybrid_search
 from core.embeddings import get_vector
 from loguru import logger
 from qdrant_client.http import models
@@ -26,7 +26,6 @@ def add_words(item: WordItem):
 
     except Exception as e :
         logger.info(f" we have issues in add words api {e}")
-
 
 
 @router.post("/search_word")
@@ -80,4 +79,11 @@ def search_metadata(keyword: str, limit: int = 5):
         }
         for p in points
     ]
+
+
+@router.get("/hybrid_search")
+def hybrid_search(query: str , keywords : str , limit : int = 5 ):
+    results = hybrid_search(query=query , keywords=keywords , limit=limit)
+    return results
+
 

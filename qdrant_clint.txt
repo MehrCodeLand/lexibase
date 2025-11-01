@@ -6,3 +6,9 @@
 2025-11-01 09:51:58.578 | INFO     | core.qdrant_client:setup_qdrant:25 - Dabase create from  setup_drant
 2025-11-01 10:00:33.821 | INFO     | core.qdrant_client:setup_qdrant:25 - Dabase create from  setup_drant
 2025-11-01 10:03:54.810 | INFO     | core.qdrant_client:setup_qdrant:31 - Collection 'words' already exists, skipping creation
+2025-11-01 11:16:50.266 | INFO     | core.qdrant_client:setup_qdrant:31 - Collection 'words' already exists, skipping creation
+2025-11-01 11:16:53.751 | INFO     | core.qdrant_client:setup_qdrant:31 - Collection 'words' already exists, skipping creation
+2025-11-01 12:12:05.968 | INFO     | core.qdrant_client:setup_qdrant:33 - Collection 'words' already exists, skipping creation
+2025-11-01 12:12:14.889 | INFO     | core.qdrant_client:setup_qdrant:33 - Collection 'words' already exists, skipping creation
+2025-11-01 12:15:19.747 | INFO     | core.qdrant_client:setup_qdrant:33 - Collection 'words' already exists, skipping creation
+2025-11-01 12:51:19.152 | INFO     | core.qdrant_client:setup_qdrant:33 - Collection 'words' already exists, skipping creation
