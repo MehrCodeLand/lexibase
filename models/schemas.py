@@ -10,3 +10,8 @@ class WordItem(BaseModel):
 class SearchQuery(BaseModel):
     word: str
     limit: int = 3
+
+class CategorySearchQuery(BaseModel):
+    query: str
+    category: str
+    limit: int = 10
